@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">OsagoCalc</string>
+        <string name="titleOsago">Калькулятор ОСАГО</string>
+        <string name="cofs">Ваши коэффициенты</string>
+        <string name="cofsBlue">БТ×КМ×КТ×КБМ×КО×КВС</string>
+        <string name="calculate">Рассчитать ОСАГО</string>
+        <string name="alt0215">×</string>
+        <string name="cityOfRegOwner">Город регистрации собственника</string>
+        <string name="enginePower">Мощность автомобиля</string>
+        <string name="numberOfDrivers">Сколько видителей</string>
+        <string name="youngestDriverAge">Возраст младщего из водителей</string>
+        <string name="minExpDrivers">Минимальный стаж водителей</string>
+        <string name="yearsWoa">Сколько лет не было аварий</string>
+        <string-array name="yourCofs">
+            <item>БТ</item>
+            <item>КМ</item>
+            <item>КТ</item>
+            <item>КБМ</item>
+            <item>КМ</item>
+            <item>КО</item>
+            <item>КБС</item>
+        </string-array>
+</resources>
