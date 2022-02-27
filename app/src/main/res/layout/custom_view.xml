@@ -48,9 +48,7 @@
                 android:id="@+id/CardView1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="30dp"
-                android:layout_marginRight="20dp"
+                android:layout_margin="16dp"
                 app:cardBackgroundColor="#FFFFFF"
                 app:cardCornerRadius="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -63,159 +61,388 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="66dp"
                     android:orientation="vertical"
-                    android:visibility="visible"
+
+                    android:visibility="gone"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/constaintLayout2">
 
-                    <!--Child LinearLayout 1-->
 
-                    <!--Child LinearLayout 2-->
-                    <LinearLayout
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/hidden"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:src="@drawable/ic_calc" />
+                        android:layout_marginBottom="16dp">
 
                         <TextView
+                            android:id="@+id/textView11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="БТ"
+                            android:textAlignment="viewStart"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Database Management"
-                            android:textColor="#000000"
-                            android:textSize="20dp" />
-                    </LinearLayout>
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/basicRate"
+                            android:textColor="#99A1AB"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView11"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <LinearLayout
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="40dp"
+                            android:breakStrategy="balanced"
+                            android:text="@string/basicRateDesc"
+                            android:textAlignment="viewStart"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView14"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                        <TextView
+                            android:id="@+id/textView14"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/basicRateNumber"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/hidden2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:src="@drawable/ic_calc" />
+                        android:layout_marginBottom="16dp">
 
                         <TextView
+                            android:id="@+id/textView21"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="КМ"
+                            android:textAlignment="viewStart"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView22"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Database Management"
-                            android:textColor="#000000"
-                            android:textSize="20dp" />
-                    </LinearLayout>
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/cofPower"
+                            android:textColor="#99A1AB"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView21"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <LinearLayout
+                        <TextView
+                            android:id="@+id/textView23"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="40dp"
+                            android:breakStrategy="balanced"
+                            android:text="@string/cofPowerDesc"
+                            android:textAlignment="viewStart"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView24"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/textView22" />
+
+                        <TextView
+                            android:id="@+id/textView24"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/cofPowerNumber"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/hidden3"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:src="@drawable/ic_calc" />
+                        android:layout_marginBottom="16dp">
 
                         <TextView
+                            android:id="@+id/textView31"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="КТ"
+                            android:textAlignment="viewStart"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView32"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Database Management"
-                            android:textColor="#000000"
-                            android:textSize="20dp" />
-                    </LinearLayout>
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/regionCof"
+                            android:textColor="#757575"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@id/textView31"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <LinearLayout
+                        <TextView
+                            android:id="@+id/textView33"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="40dp"
+                            android:breakStrategy="balanced"
+                            android:text="@string/regionCofDesc"
+                            android:textAlignment="viewStart"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView34"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView32" />
+
+                        <TextView
+                            android:id="@+id/textView34"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/regionCofNumber"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/hidden4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:src="@drawable/ic_calc" />
+                        android:layout_marginBottom="16dp">
 
                         <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="КБМ"
+                            android:textAlignment="viewStart"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView42"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Database Management"
-                            android:textColor="#000000"
-                            android:textSize="20dp" />
-                    </LinearLayout>
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/noAccCof"
+                            android:textColor="#99A1AB"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView41"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <LinearLayout
+                        <TextView
+                            android:id="@+id/textView43"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="40dp"
+                            android:breakStrategy="balanced"
+                            android:text="@string/noAccCofDesc"
+                            android:textAlignment="viewStart"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView44"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+                        <TextView
+                            android:id="@+id/textView44"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/noAccCofNumber"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/hidden5"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:src="@drawable/ic_calc" />
+                        android:layout_marginBottom="16dp">
 
                         <TextView
+                            android:id="@+id/textView51"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="КВС"
+                            android:textAlignment="viewStart"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView52"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Data Structures"
-                            android:textColor="#000000"
-                            android:textSize="20dp" />
-                    </LinearLayout>
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/expCof"
+                            android:textColor="#99A1AB"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView51"
+                            app:layout_constraintTop_toTopOf="parent" />
 
-                    <!--Child LinearLayout 3-->
-                    <LinearLayout
+                        <TextView
+                            android:id="@+id/textView53"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="40dp"
+                            android:breakStrategy="balanced"
+                            android:maxLines="5"
+                            android:text="@string/expCofDesc"
+                            android:textAlignment="viewStart"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView54"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+                        <TextView
+                            android:id="@+id/textView54"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/expCofNumber"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/hidden6"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="horizontal">
-
-                        <ImageView
-                            android:layout_width="50dp"
-                            android:layout_height="50dp"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginBottom="10dp"
-                            android:src="@drawable/ic_calc" />
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp">
 
                         <TextView
+                            android:id="@+id/textView61"
+                            android:layout_width="wrap_content"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="КО"
+                            android:textAlignment="viewStart"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView62"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="20dp"
-                            android:layout_marginTop="20dp"
-                            android:text="Operating Systems"
-                            android:textColor="#000000"
-                            android:textSize="20dp" />
-                    </LinearLayout>
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:text="@string/regionCof"
+                            android:textColor="#99A1AB"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toEndOf="@+id/textView61"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/textView63"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="40dp"
+                            android:breakStrategy="balanced"
+                            android:text="@string/restrCofDesc"
+                            android:textAlignment="viewStart"
+                            android:textSize="12sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/textView64"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/textView61" />
+
+                        <TextView
+                            android:id="@+id/textView64"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="27dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:fontFamily="@font/roboto"
+                            android:text="@string/restrCofNumber"
+                            android:textColor="#171D23"
+                            android:textSize="16sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
                 </LinearLayout>
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -223,17 +450,17 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
+
                     <ImageView
                         android:id="@+id/arrow_button"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="8dp"
                         android:layout_marginEnd="12dp"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/textDesc"
                         app:layout_constraintTop_toTopOf="parent"
-                        app:srcCompat="@drawable/ic_baseline_expand_less_24" />
+                        app:srcCompat="@drawable/ic_baseline_expand_less_24"
+                        android:contentDescription="TODO" />
 
                     <androidx.cardview.widget.CardView
                         android:id="@+id/CardViewLogo"
@@ -248,10 +475,11 @@
                         app:layout_constraintTop_toTopOf="parent">
 
                         <ImageView
-                            android:id="@+id/imageView"
+                            android:id="@+id/calcLogo"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:background="#F4F7FB"
+                            android:contentDescription="TODO"
                             android:padding="8dp"
                             app:srcCompat="@drawable/ic_calc" />
                     </androidx.cardview.widget.CardView>
@@ -295,88 +523,117 @@
                 android:id="@+id/CardView2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="20dp"
+                android:layout_margin="16dp"
                 app:cardCornerRadius="20dp"
-                app:contentPadding="20dp"
+                app:contentPadding="16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/CardView1">
 
-                <TextView
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/cityOfRegOwner"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
-                    android:background="@drawable/cardviewshape"
-                    android:fontFamily="@font/roboto"
-                    android:gravity="center"
-                    android:textAlignment="viewStart"
-                    android:textSize="16sp"
-                    android:text="@string/cityOfRegOwner"/>
+                    android:layout_height="wrap_content"
+                    app:boxStrokeWidth="0dp">
 
-                <TextView
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInput1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cardviewshape"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/cityOfRegOwner"
+                        android:textAlignment="viewStart"
+                        android:textColorHint="#636F7D" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/enginePower"
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="80dp"
-                    android:background="@drawable/cardviewshape"
-                    android:fontFamily="@font/roboto"
-                    android:gravity="center"
-                    android:text="@string/enginePower"
-                    android:textAlignment="viewStart"
-                    android:textSize="16sp" />
+                    app:boxStrokeWidth="0dp">
 
-                <TextView
-                    android:id="@+id/numberOfDrivers"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInput2"
+                        android:focusableInTouchMode="false"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/cardviewshape"
+                        android:hint="@string/enginePower"
+                        android:textAlignment="viewStart"
+                        android:textColorHint="#636F7D" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="160dp"
-                    android:background="@drawable/cardviewshape"
-                    android:fontFamily="@font/roboto"
-                    android:gravity="center"
-                    android:text="@string/numberOfDrivers"
-                    android:textAlignment="viewStart"
-                    android:textSize="16sp" />
+                    app:boxStrokeWidth="0dp">
 
-                <TextView
-                    android:id="@+id/youngestDriverAge"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInput3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:background="@drawable/cardviewshape"
+                        android:hint="@string/numberOfDrivers"
+                        android:textAlignment="viewStart"
+                        android:textColorHint="#636F7D"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="240dp"
-                    android:background="@drawable/cardviewshape"
-                    android:fontFamily="@font/roboto"
-                    android:gravity="center"
-                    android:text="@string/youngestDriverAge"
-                    android:textAlignment="viewStart"
-                    android:textSize="16sp" />
+                    app:boxStrokeWidth="0dp">
 
-                <TextView
-                    android:id="@+id/minExpDrivers"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInput4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:background="@drawable/cardviewshape"
+                        android:hint="@string/youngestDriverAge"
+                        android:textAlignment="viewStart"
+                        android:textColorHint="#636F7D"/> />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="320dp"
-                    android:background="@drawable/cardviewshape"
-                    android:fontFamily="@font/roboto"
-                    android:gravity="center"
-                    android:text="@string/minExpDrivers"
-                    android:textAlignment="viewStart"
-                    android:textSize="16sp" />
+                    app:boxStrokeWidth="0dp">
 
-                <TextView
-                    android:id="@+id/yearsWithOutAcc"
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInput5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:background="@drawable/cardviewshape"
+                        android:hint="@string/minExpDrivers"
+                        android:textAlignment="viewStart"
+                        android:textColorHint="#636F7D"/> />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="60dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginTop="400dp"
-                    android:background="@drawable/cardviewshape"
-                    android:clickable="false"
-                    android:fontFamily="@font/roboto"
-                    android:gravity="center"
-                    android:text="@string/yearsWoa"
-                    android:textAlignment="viewStart"
-                    android:textSize="16sp" />
+                    app:boxStrokeWidth="0dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/textInput6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="false"
+                        android:background="@drawable/cardviewshape"
+                        android:hint="@string/yearsWoa"
+                        android:textAlignment="viewStart"
+                        android:textColorHint="#636F7D"/>/>
+                </com.google.android.material.textfield.TextInputLayout>
+
             </androidx.cardview.widget.CardView>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
